@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/icon.jpg" />
+    <title>Imagen a pantalla completa con scroll</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Evita el scroll por defecto del navegador */
+        }
+
+        .image-container {
+            width: 100vw; /* El ancho de la ventana del navegador */
+            height: 100%;
+            overflow-y: auto; /* Habilita el scroll vertical */
+           
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container img {
+            width: 100%; /* La imagen ocupará todo el ancho de la ventana */
+            height: auto;
+            object-fit: contain; /* Ajusta la imagen sin distorsionarla */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="../images/filters2.png" alt="Imagen a pantalla completa">
+    </div>
+</body>
+</html>

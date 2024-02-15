@@ -1,0 +1,220 @@
+/* Estilos para la página de Bots Existentes y Crear tu Propio Bot */
+
+body {
+  background-color: #F2F2F2;
+  color: #000;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #000;
+  color: #FFF;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px; /* Establecer un alto fijo para el encabezado */
+}
+
+header img {
+  width: 220px;
+  height: auto;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0; /* Eliminamos el margen izquierdo del primer elemento */
+}
+
+nav ul li a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Centramos horizontalmente */
+  align-items: center; /* Alineamos en la parte superior */
+  flex-direction: column; /* Cambiamos a dirección de columna */
+}
+
+
+.messageMain {
+  
+  font-size: 35px; /* Tamaño de letra más grande */
+  margin: 0 auto; /* Centrar horizontalmente */
+  margin-bottom: 20px;
+  font-family: "Poppins", Arial, sans-serif; /* Poppins como fuente principal */
+}
+
+.message {
+  display: inline;
+  font-size: 35px; /* Tamaño de letra más grande */
+  margin: 0 auto; /* Centrar horizontalmente */
+  margin-bottom: 20px;
+  font-family: "Poppins", Arial, sans-serif; /* Poppins como fuente principal */
+  align-content: center;
+}
+
+
+.video-container {
+  display: flex;
+  justify-content: center; /* Centramos horizontalmente */
+}
+
+.video {
+  margin: 0 10px; /* Espacio entre los videos */
+  text-align: center; /* Centramos el contenido del video */
+}
+
+.video iframe {
+  width: 650px;
+  height: 394px;
+}
+
+.video p {
+  font-size: 25px; /* Tamaño de letra para los textos de los videos */
+}
+
+.video .image {
+  width: 100%; /* Ancho máximo del contenedor */
+  max-height: 450px; /* Altura máxima de la imagen */
+  object-fit: cover; /* Ajustar imagen manteniendo la relación de aspecto */
+}
+
+footer {
+  background-color: #000;
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.video {
+  margin-top: 20px; /* Margen superior */
+  margin-right: 20px; /* Espacio entre los videos */
+  text-align: center; /* Centramos el contenido del video */
+}
+
+.btn1 {
+  background-color: #180606; /* Color de fondo del botón */
+  color: rgb(240, 237, 237); /* Color del texto del botón */
+  padding: 15px 25px; /* Espaciado interno del botón */
+  font-size: 20px; /* Tamaño de letra del botón */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+  display: inline-block; /* Hacer que el botón se comporte como un elemento en línea */
+  text-decoration: none; /* Eliminar subrayado predeterminado en el texto del botón */
+  margin-bottom: 10px; /* Espacio entre los botones */
+}
+
+.btn2 {
+  background-color: #939192; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  padding: 15px 25px; /* Espaciado interno del botón */
+  font-size: 20px; /* Tamaño de letra del botón */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+  display: inline-block; /* Hacer que el botón se comporte como un elemento en línea */
+  text-decoration: none; /* Eliminar subrayado predeterminado en el texto del botón */
+  margin-bottom: 10px; /* Espacio entre los botones */
+}
+
+
+.btn1:hover {
+  background-color: #291a9bd3; /* Cambiar color de fondo al pasar el cursor sobre el botón */
+}
+
+.btn2:hover {
+  background-color: #291a9bd3; /* Cambiar color de fondo al pasar el cursor sobre el botón */
+}
+
+.btn:last-child {
+  margin-bottom: 0; /* No aplicar margen inferior al último botón */
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Espacio para los círculos */
+}
+
+.carousel {
+  overflow: hidden;
+  justify-content: center; /* Centrar horizontalmente */  
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  display: none;
+  justify-content: center; /* Centrar horizontalmente */
+  
+}
+
+.carousel-item.active {
+  display: block;
+  text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+
+
+.circle.active {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.image-container {
+  width: 100vw; /* El ancho de la ventana del navegador */
+  height: 100%;
+  overflow-y: auto; /* Habilita el scroll vertical */
+ 
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%; /* La imagen ocupará todo el ancho de la ventana */
+  height: auto;
+  object-fit: contain; /* Ajusta la imagen sin distorsionarla */
+}
